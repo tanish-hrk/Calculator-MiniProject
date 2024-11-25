@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+
+    /* justify-content: center;
+    align-items: center; */
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    text-decoration: underline;
+    color: #573401;
+    text-shadow: 1px 3px 10px #e19005;
+}
+
+.card{
+    
+    border-radius: 8px ;
+    /* height: 80px; */
+    width: 80vw;
+    background-color: aqua;
+    /* margin: 20px; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 2px;
+    font-family: cursive;
+    color: #0e011c;
+}
+
+#math{
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+    height: 380px;
+    width: 320px;
+    background-color: #1e3c22;
+}
+
+.display{
+    display: flex;
+    background-color: aqua;
+    height: 50px;
+    width: 260px;
+    border: 5px;
+    border: #e19005;
+    margin-bottom: 14px;
+}
+
+.calc{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.merge{
+    grid-column: span 2;
+}
+
+/* .mathsButton{
+    position: relative;
+    padding: 2px;
+    margin: 40px;
+    height: 80px;
+    width: 80px;
+    border: 0px;
+} */
+
+li{
+    list-style: none;
+    font-size: larger;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ .button{
+    cursor: pointer;
+    padding: 14px;
+    border: 5px #051fe1;
+    border-radius: 0px;
+    background-color: #e19005;
+    text-align: center;
+ }
+
+ .button:hover{
+    background-color: #e6c12b;
+ }
+
