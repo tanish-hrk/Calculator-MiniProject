@@ -140,7 +140,7 @@ li{
     background-color: rgb(83, 5, 5);
 }
 
-.bmi-container {
+/* .bmi-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -162,4 +162,4 @@ li{
 }
 .bmi-container button:hover {
     background-color: #45a049;
-}
+} */
