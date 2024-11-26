@@ -49,22 +49,37 @@ h2{
 }
 
 #math{
+    margin-top: 20px;
     justify-content: center;
     align-content: center;
-    padding: 30px;
-    height: 380px;
-    width: 320px;
-    background-color: #1e3c22;
+    padding: 16px;
+    height: 390px;
+    width: 340px;
+    background-color: #846e3e;
+    border-radius: 10px;
 }
 
-.display{
+.display-container,#display{
     display: flex;
-    background-color: aqua;
-    height: 50px;
-    width: 260px;
+    background-color: rgb(255, 255, 249);
+    height: 55px;
+    width: 306px;
     border: 5px;
     border: #e19005;
     margin-bottom: 14px;
+    justify-content: center;
+    padding: 2px;
+    border-radius: 5px;
+    /* align-items: center; */
+}
+
+#display{
+    color: #0e011c;
+    /* text */
+    /* position: relative; */
+    background-color: rgb(254, 218, 140);
+    height: 50px;
+    width: 300px;
 }
 
 .calc{
@@ -75,7 +90,8 @@ h2{
     margin-bottom: 10px;
 }
 
-.merge{
+#equal{
+    width: 149px;
     grid-column: span 2;
 }
 
@@ -96,10 +112,11 @@ li{
 }
  .button{
     cursor: pointer;
+    width: 69px;
     padding: 14px;
     border: 5px #051fe1;
-    border-radius: 0px;
-    background-color: #e19005;
+    border-radius: 4px;
+    background-color: #f4d091;
     text-align: center;
  }
 
@@ -107,3 +124,42 @@ li{
     background-color: #e6c12b;
  }
 
+#equal, #plus, #minus, #multiply, #divide, #percent{
+    background-color: #cfe105;
+}
+#ac{
+    background-color: #eff0db;
+}
+
+#del{
+    color:wheat;
+    background-color: rgb(138, 10, 10);
+}
+
+#del:hover{
+    background-color: rgb(83, 5, 5);
+}
+
+.bmi-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+.bmi-container input {
+    padding: 8px;
+    font-size: 16px;
+}
+.bmi-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bmi-container button:hover {
+    background-color: #45a049;
+}

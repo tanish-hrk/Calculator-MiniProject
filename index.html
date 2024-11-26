@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AllRounder-Calculator</title>
     <link rel="stylesheet"  href="style.css" >
+    <script src="script.js"></script>
+
 </head>
 <body>
     <h1>ALL ROUNDER CALCULATOR</h1>
@@ -18,34 +20,50 @@
     </div>
 
     <div id="math">
-        <div class="display"></div>
+        <div class="display-container">
+            <input type="text" name="display" id="display" placeholder="0" disabled/>
+        </div>
         <div class="mathsButton">
             <ul type="none" class="calc">
-                <li class="button" id="AC">AC</li>
-                <li class="button" id="backspace">X</li>
-                <li class="button" id="percent">%</li>
-                <li class="button" id="divide">/</li>
-                <li class="button" id="7">7</li>
-                <li class="button" id="8">8</li>
-                <li class="button" id="9">9</li>
-                <li class="button" id="multiply">x</li>
-                <li class="button" id="4">4</li>
-                <li class="button" id="5">5</li>
-                <li class="button" id="6">6</li>
-                <li class="button" id="minus">-</li>
-                <li class="button" id="1">1</li>
-                <li class="button" id="2">2</li>
-                <li class="button" id="3">3</li>
-                <li class="button" id="plus">+</li>
-                <li class="button" id="0">0</li>
-                <li class="button" id="dot">.</li>
-                <li class="button merge" id="equal">=</li>
-        </div>
-            
+                <li class="button" onclick="clearDisplay()" id="ac">AC</li>
+                <li class="button" onclick="appendValue()" id="del">DEL</li>
+                <li class="button" onclick="appendValue('%')" id="percent">%</li>
+                <li class="button" onclick="appendValue('/')" id="divide">/</li>
 
-        </ul>
+                <li class="button" onclick="appendValue('7')" id="7">7</li>
+                <li class="button" onclick="appendValue('8')" id="8">8</li>
+                <li class="button" onclick="appendValue('9')" id="9">9</li>
+                <li class="button" onclick="appendValue('*')" id="multiply">x</li>
+
+                <li class="button" onclick="appendValue('4')" id="4">4</li>
+                <li class="button" onclick="appendValue('5')" id="5">5</li>
+                <li class="button" onclick="appendValue('6')" id="6">6</li>
+                <li class="button" onclick="appendValue('-')" id="minus">-</li>
+
+                <li class="button" onclick="appendValue('1')" id="1">1</li>
+                <li class="button" onclick="appendValue('2')" id="2">2</li>
+                <li class="button" onclick="appendValue('3')" id="3">3</li>
+                <li class="button" onclick="appendValue('+')" id="plus">+</li>
+
+                <li class="button" onclick="appendValue('0')" id="0">0</li>
+                <li class="button" onclick="appendValue('.')" id="dot">.</li>
+                <li class="button merge" onclick="calculate()" id="equal">=</li>
+            </ul>
+        </div>
     </div>
-    <div id="bmi"></div>
+
+    <div id="bmi">
+        <div class="bmi-container">
+            <h2>BMI Calculator</h2>
+            <label for="weight">Weight (kg): </label>
+            <input type="number" id="weight" placeholder="Enter weight" />
+            <label for="height">Height (m): </label>
+            <input type="number" id="height" placeholder="Enter height" />
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            <div id="bmi-result" class="bmi-result"></div>
+        </div>
+    </div>
+    
+    
 </body>
-<script src="script.js"></script>
 </html>
